@@ -51,7 +51,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="org.apache.iotdb.mybatis.plugin.mapper" targetProject="src/main/java">
             <!--            <property name="enableSubPackages" value="true"/>-->
         </javaClientGenerator>
-        <table schema="test" tableName="mix" domainObjectName="Mix" enableSelectByPrimaryKey="true" enableInsert="true" enableDeleteByPrimaryKey="true">
+        <table schema="test" tableName="mix" domainObjectName="Mix" enableSelectByPrimaryKey="true" enableInsert="true" enableDeleteByPrimaryKey="true" enableUpdateByPrimaryKey="false">
             <property name="virtualKeyColumns" value="time,device_id,device_name,device_tag"/>
         </table>
     </context>
